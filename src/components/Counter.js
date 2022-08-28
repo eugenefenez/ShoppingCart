@@ -1,7 +1,6 @@
+import React, { Component } from 'react'
 
-import React, { Component } from "react";
-
-class Counter extends Component {
+export class Counter extends Component {
     render() {
         return (
             <div>
@@ -34,7 +33,7 @@ class Counter extends Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 
     getBadgeClasses = () => {
@@ -47,6 +46,7 @@ class Counter extends Component {
         const { value } = this.props.counter;
         return value === 0 ? "Zero" : value;
     };
+
 }
 
-export default Counter;
+export default Counter
